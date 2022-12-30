@@ -17,7 +17,7 @@
             crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
-    <img src="{{ asset('storage/images/'.$article->image) }}" alt="" title=""></a>
+    
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
