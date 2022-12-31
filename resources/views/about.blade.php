@@ -51,8 +51,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="/" class="nav-item nav-link active">Accueil</a>
-                <a href="/about" class="nav-item nav-link">A Propos</a>
+                <a href="/" class="nav-item nav-link">Accueil</a>
+                <a href="/about" class="nav-item nav-link active">A Propos</a>
             </div>
             <a href="/login" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Se connecter<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -60,34 +60,19 @@
     <!-- Navbar End -->
 
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
-        <div class="owl-carousel header-carousel position-relative">
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/Faculteì des Sciences de l’Ingeìnieur -04.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .2);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/Faculteì des Sciences de l’Ingeìnieur -05.jpg" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .2);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-sm-10 col-lg-8">
-                            </div>
-                        </div>
-                    </div>
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Université Privée De Fès</h1>
+                    <h4><p style="color:rgb(252, 252, 252);">L’Université Privée de Fès est la première université privée Reconnue par l’État au niveau de la capitale spirituelle et culturelle du royaume du Maroc. Elle est composée de quatre structures indépendantes notamment la Facultéì des Sciences de l’Ingénieur, la Fès Business School, l’Institut des Hautes Études Juridiques et Sociales et l’Ecole Supérieure des Métiers de l’Architecture et du Bâtiment, et vous offre le choix entre un parcours d’Ingénieur d’état ou de Master « Bac+5 », ou un parcours Bachelor « Bac +4 », avec plus de 20 spécialités les plus convoitées par les entreprises nationales et multinationales.</p></h4>
+                    
                 </div>
             </div>
         </div>
     </div>
-    <!-- Carousel End -->
+    <!-- Header End -->
 
 
     <!-- Service Start -->
@@ -170,9 +155,6 @@
         </div>
     </div>
     <!-- About End -->
-
-
-
 
 
     <!-- Team Start -->
@@ -259,9 +241,6 @@
         </div>
     </div>
     <!-- Team End -->
-
-
-    
         
 
     <!-- Footer Start -->
@@ -288,7 +267,6 @@
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                
                 
             </div>
         </div>
