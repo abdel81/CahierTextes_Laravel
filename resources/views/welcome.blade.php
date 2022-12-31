@@ -99,7 +99,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
                             <h5 class="mb-3">Fes Buisness School</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>adaptés aux besoins des entreprises et aux envies des étudiants. De la richesse de son expertise, de ses mutations et de ses partenariats</p>
                         </div>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe text-primary mb-4"></i>
                             <h5 class="mb-3">Faculté des sciences de l'ingenieur</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>Faculté des Sciences de l’Ingénieur (FSI), composante de l’Université Privée de Fès</p>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-Accueil text-primary mb-4"></i>
                             <h5 class="mb-3">Ecole Supérieure des Métiers de l'Architecture</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>leitmotiv de l’ESMAB est d’initier ce décloisonnement dès la formation des professionnels de ce secteur</p>
                         </div>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                         <div class="p-4">
                             <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
                             <h5 class="mb-3">Faculté des Sciences Paramedicales et technique de santé</h5>
-                            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                            <p>l’Université Privée de Fès s’engage à contribuer au renforcement du système de santé et à l’amélioration de l’offre de soins au Maroc</p>
                         </div>
                     </div>
                 </div>
