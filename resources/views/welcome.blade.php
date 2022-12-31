@@ -277,12 +277,6 @@
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Lotissement Quaraouiyine Route Ain Chkef, Fès 30000</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0535-610320</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>upf@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
                 </div>
                 
                 
