@@ -18,7 +18,7 @@ class Crt_login
     public function handle(Request $request, Closure $next, $role)
     {
         if (!Auth::check()) {
-            return redirect('login');
+            return redirect('compte');
         }
         $user = Auth::user();
 
