@@ -325,7 +325,7 @@ td {
                 <div class="card">
                     <div class="box">
                         <h1>2194</h1>
-                        <h3>Etudiants</h3>
+                        <h3>Etudiantss</h3>
                     </div>
                     <div class="icon-case">
                         <img src="img/reading.png" alt="">
