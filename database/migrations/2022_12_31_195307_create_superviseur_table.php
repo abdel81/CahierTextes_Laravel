@@ -14,7 +14,7 @@ class CreateSuperviseurTable extends Migration
     public function up()
     {
         Schema::create('superviseur', function (Blueprint $table) {
-            $table->id();
+            $table->BigIncrements('id');
             $table->string('CINsup')->unique();
             $table->string('nomsup');
             $table->string('prenomsup');
