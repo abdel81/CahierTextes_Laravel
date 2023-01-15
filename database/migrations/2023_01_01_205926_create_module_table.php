@@ -17,6 +17,8 @@ class CreateModuleTable extends Migration
             $table->id();
             $table->string('nommod');
             $table->string('semestremod');
+            $table->foreign('nomprof')->references('NomP')->on('professeur');
+            $table->string('professeur');
             $table->timestamps();
         });
     }

@@ -16,8 +16,11 @@ class CreateCalendrierTable extends Migration
         Schema::create('calendrier', function (Blueprint $table) {
             $table->id();
             $table->string('Date');
-            //$table->foreign('classid')->references('id')->on('classe');
-            //$table->foreign('module')->references('nommodule')->on('module');
+            $table->foreign('classid')->references('id')->on('classe');
+            $table->unsignedBigInteger('classid');
+            $table->foreign('module')->references('nommodule')->on('module');
+            $table->string('module');
+
 
 
             $table->timestamps();
