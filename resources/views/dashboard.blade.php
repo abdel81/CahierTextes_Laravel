@@ -316,7 +316,7 @@ td {
                     <div class="img-case">
                         <img src="img/user.png" alt="">
                     </div>
-                    <a href="{{url('logout')}}" class="btn">Logout</a>
+                    <a href="{{url('logout')}}" class="btn">Logouts</a>
                 </div>
             </div>
         </div>
