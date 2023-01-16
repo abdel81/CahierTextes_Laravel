@@ -299,6 +299,7 @@ td {
             <li><img src="img/utilisateur.png" alt="" class="T">&nbsp;<span>Comptes</span> </li>
             <li><img src="img/calendar.png" alt="">&nbsp;<span>Calendriers</span> </li>
             <li><img src="img/reading.png" alt="">&nbsp;<span>Etudiants</span> </li>
+            <li><img src="img/reading.png" alt="">&nbsp;<span>Demande</span> </li>
             <!--<li><img src="payment.png" alt="">&nbsp;<span>Income</span> </li>-->
             <li><img src="img/question.png" alt="">&nbsp; <span>Help</span></li>
             <li><img src="img/settings (1).png" alt="">&nbsp;<span>Settings</span> </li>
@@ -353,7 +354,7 @@ td {
             <div class="content-2">
                 <div class="recent-payments">
                     <div class="title">
-                        <h2>les demandes</h2>
+                        <h2>les Demandes</h2>
                         <a href="#" class="btn">Voir</a>
                     </div>
                     <table>
@@ -392,4 +393,4 @@ td {
     </div>
 </body>
 
-</html> 
+</html>
