@@ -292,13 +292,13 @@ td {
     <div class="side-menu">
         <div class="brand-name">
             <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-                <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>TextBooks</h2>
+                <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i><a href="dashboard" class="navbar-brand d-flex align-items-center px-4 px-lg-5">TextBooks</a></h2>
             </a>        </div>
         <ul>
             <!--<li><img src="dashboard (2).png" alt="">&nbsp; <span>Dashboard</span> </li>-->
-            <li><img src="img/utilisateur.png" alt="" class="T">&nbsp;<span> <a href="compte.blade.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">Comptes</a>/span> </li>
+            <li><img src="img/utilisateur.png" alt="" class="T">&nbsp;<span> <a href="compte" class="navbar-brand d-flex align-items-center px-4 px-lg-5">Comptes</a></span> </li>
             <li><img src="img/calendar.png" alt="">&nbsp;<span>Calendriers</span> </li>
-            <li><img src="img/reading.png" alt="">&nbsp;<span>Professeurs</span> </li>
+            <li><img src="img/reading.png" alt="">&nbsp;<span><a href="etudiant" class="navbar-brand d-flex align-items-center px-4 px-lg-5">Etudiant</a></span> </li>
             <!--<li><img src="payment.png" alt="">&nbsp;<span>Income</span> </li>-->
             <li><img src="img/question.png" alt="">&nbsp; <span>Help</span></li>
             <li><img src="img/settings (1).png" alt="">&nbsp;<span>Settings</span> </li>

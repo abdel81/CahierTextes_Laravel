@@ -22,6 +22,17 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/compte', function () {
+    return view('compte');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/etudiant', function () {
+    return view('etudiant');
+});
 
 Route::get('login','App\Http\Controllers\AuthController@index')->name('login');
 Route::post('proses_login','App\Http\Controllers\AuthController@proses_login')->name('proses_login');
