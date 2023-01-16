@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>Admin Panel</title>
     <style >
         * {
@@ -296,12 +302,8 @@ td {
             </a>        </div>
         <ul>
             <!--<li><img src="dashboard (2).png" alt="">&nbsp; <span>Dashboard</span> </li>-->
-            <a href="/compte" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <li><img src="img/utilisateur.png" alt="" class="T">&nbsp;<span>Comptes</span> </li>
-            </a>
-
             <li><img src="img/calendar.png" alt="">&nbsp;<span>Calendriers</span> </li>
-            
             <li><img src="img/reading.png" alt="">&nbsp;<span>Etudiants</span> </li>
             <!--<li><img src="payment.png" alt="">&nbsp;<span>Income</span> </li>-->
             <li><img src="img/question.png" alt="">&nbsp; <span>Help</span></li>
@@ -325,74 +327,176 @@ td {
             </div>
         </div>
         <div class="content">
-            <div class="cards">
-                <div class="card">
-                    <div class="box">
-                        <h1>2194</h1>
-                        <h3>Etudiants</h3>
-                    </div>
-                    <div class="icon-case">
-                        <img src="img/reading.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <h1>53</h1>
-                        <h3>Calendriers</h3>
-                    </div>
-                    <div class="icon-case">
-                        <img src="img/calendar.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <h1>76</h1>
-                        <h3>Comptes</h3>
-                    </div>
-                    <div class="icon-case">
-                        <img src="img/utilisateur.png" alt="">
-                    </div>
-                </div>
+        <form action="${Consultation == null?'createConsultation':'editConsultation'}" method="POST">
+            <h4>Crée un Etudiants</h4>
+            <hr>
+            &nbsp;
+            <div class="name-field">
+                <div>
+                <label for="cars" >Specialite</label>
+  				<select name="medcin" id="cars" style="border: 1px solid #0298cf;border-radius: 7px;padding-top:10px;padding-bottom:12px">
+    			<option value="" >choisir la Specialite</option>
+    			<option>Admin</option>
+                <option>Superviseur</option>
+    			<option>Professeur</option>
+  				</select>
+                </div> 
             </div>
-            <div class="content-2">
-                <div class="recent-payments">
-                    <div class="title">
-                        <h2>les demandes</h2>
-                        <a href="#" class="btn">Voir</a>
-                    </div>
-                    <table>
-                        <tr>
-                            <th>Professeur</th>
-                            <th>Classe</th>
-                            <th>Option</th>
-                        </tr>
-                        <tr>
-                            <td>abdellatif</td>
-                            <td>Genie info 4</td>
-                            <td><a href="#" class="btn">Voir</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="new-students">
-                    <div class="title">
-                        <h2>Nouveaux comptes</h2>
-                        <a href="#" class="btn">Voir</a>
-                    </div>
-                    <table>
-                        <tr>
-                            <th>Profil</th>
-                            <th>Nom</th>
-                            <th>option</th>
-                        </tr>
-                        <tr>
-                            <td><img src="img/user.png" alt=""></td>
-                            <td>aya</td>
-                            <td>Admin</td>
-                        </tr>
-                    </table>
-                </div>
+            &nbsp;
+            <div class="name-field">
+                <div>
+                    <label>Nom</label>
+            		<input type="text" placeholder="Nom" name="dateC" style="border: 1px solid #0298cf;border-radius: 7px;">
+                </div>  
+                <div>
+                    <label>Prenom</label>
+            		<input type="text" placeholder="Prenom" name="dateC" style="border: 1px solid #0298cf;border-radius: 7px;">
+                </div>    
             </div>
-        </div>
+            &nbsp;
+            <div class="name-field">
+                <div>
+                    <label>Email</label>
+            		<input type="text" placeholder="Email" name="dateC" style="border: 1px solid #0298cf;border-radius: 7px;">
+                </div>  
+                <div>
+                    <label>Pass</label>
+            		<input type="text" placeholder="Pass" name="dateC" style="border: 1px solid #0298cf;border-radius: 7px;">
+                </div>    
+            </div>
+            &nbsp;
+            <div>
+			<label for="cars" >Numero</label><br>
+  			<input type="text" placeholder="Numero" name="prix"  id="myInput"  style="width:20%;border: 1px solid #0298cf;border-radius: 7px;padding-top:10px;padding-bottom:12px" placeholder="">
+            </div>
+            &nbsp;  
+            <input type="submit" value="Creé"  style="margin-left:100px"></div>
+            </form>
+            <style>
+form{
+    margin-top:70px;
+	margin-left:100px;
+	/* margin-right:30px;  */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    width : 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2  );
+}
+h4{
+    text-align: center;
+    font-size: 20px;
+}
+hr{
+    margin: 10px 0;
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    width: 100%;
+}
+.name-field{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.name-field div{
+    display: flex;
+    flex-direction: column;
+}
+.name-field div{
+    width: 49%;
+}
+label{
+    margin-bottom: 6px;
+}
+input{
+    margin-bottom: 5px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+input:focus{
+    border: 1px solid #17a2b8;
+}
+input[type="submit"]{
+    margin-top: 15px;
+    background-color: #17a2b8;
+    color: #fff;
+    border: 1px solid #17a2b8;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    margin: 5px 0;
+    font-size: 14px;
+}
+p a{
+    text-decoration: 0;
+    color: #17a2b8;
+}
+            </style>
+        </form>&nbsp;
+			</div>	
+  <style>
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 340px;
+  top: 320px;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background: white;	
+    color: #5386E4;
+}
+
+/* Style the header */
+.heade {
+  background-color: #48CAE4;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.heade:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+  </style>
     </div>
 </body>
 
