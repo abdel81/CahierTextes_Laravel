@@ -54,7 +54,7 @@
                 <a href="/" class="nav-item nav-link active">Accueil</a>
                 <a href="/about" class="nav-item nav-link">A Propos</a>
             </div>
-            <a href="/login" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Se connecter<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="/demande" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Se connecter<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -189,7 +189,7 @@
                             <img class="img-fluid" src="img/ZAKARIAITAHRIOUAN.jpg" alt="">
                         </div>
                         <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
-                            
+
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">M.ITAHRIOUAN Zakaria</h5>
@@ -257,8 +257,8 @@
     <!-- Team End -->
 
 
-    
-        
+
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -278,8 +278,8 @@
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>0535-610320</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>upf@example.com</p>
                 </div>
-                
-                
+
+
             </div>
         </div>
         <div class="container">
@@ -288,7 +288,7 @@
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy; <a class="border-bottom" href="#">Application de gestion de cahier de textes</a>, All Right Reserved.
 
-                      
+
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
