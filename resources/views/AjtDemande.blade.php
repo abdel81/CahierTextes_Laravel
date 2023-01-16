@@ -327,321 +327,183 @@ td {
             </div>
         </div>
         <div class="content">
-        <style type="text/css">
-    body {
-        color: #566787;
-  background: #f5f5f5;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 13px;
- }
- .table-wrapper {
-
-        background: #fff;
-        padding: 20px 25px;
-        margin: 30px 0;
-        border-radius:1px;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);
-    }
- .table-title {
-  padding-bottom: 15px;
-    background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
-  color: #fff;
-  padding: 16px 30px;
-  margin: -20px -25px 10px;
-  border-radius: 1px 1px 0 0;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);
-    }
-    .table-title h2 {
-  margin: 5px 0 0;
-  font-size: 24px;
- }
- .table-title .btn-group {
-  float: right;
- }
- .table-title .btn {
-  color: #fff;
-  float: right;
-  font-size: 13px;
-  border: none;
-  min-width: 50px;
-  border-radius: 1px;
-  border: none;
-  outline: none !important;
-  margin-left: 10px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.247);
- }
- .table-title .btn i {
-  float: left;
-  font-size: 21px;
-  margin-right: 5px;
- }
- .table-title .btn span {
-  float: left;
-  margin-top: 2px;
- }
-    table.table tr th, table.table tr td {
-        border-color: #e9e9e9;
-  padding: 12px 15px;
-  vertical-align: middle;
-    }
- table.table tr th:first-child {
-  width: 50px;
- }
- table.table tr th:last-child {
-  width: 100px;
- }
-    table.table-striped tbody tr:nth-of-type(odd) {
-     background-color: #fcfcfc;
- }
- table.table-striped.table-hover tbody tr:hover {
-  background: #f5f5f5;
- }
-    table.table th i {
-        font-size: 13px;
-        margin: 0 5px;
-        cursor: pointer;
-    }
-    table.table td:last-child i {
-  opacity: 0.9;
-  font-size: 22px;
-        margin: 0 5px;
-    }
- table.table td a {
-  font-weight: bold;
-  color: #566787;
-  display: inline-block;
-  text-decoration: none;
-  outline: none !important;
- }
- table.table td a:hover {
-  color: #2196F3;
- }
- table.table td a.edit {
-        color: #FFC107;
-    }
-    table.table td a.delete {
-        color: #F44336;
-    }
-    table.table td i {
-        font-size: 19px;
-    }
- table.table .avatar {
-  border-radius: 1px;
-  vertical-align: middle;
-  margin-right: 10px;
- }
-    .pagination {
-        float: right;
-        margin: 0 0 5px;
-    }
-    .pagination li a {
-        border: none;
-        font-size: 13px;
-        min-width: 30px;
-        min-height: 30px;
-        color: #999;
-        margin: 0 2px;
-        line-height: 30px;
-        border-radius: 1px !important;
-        text-align: center;
-        padding: 0 6px;
-    }
-    .pagination li a:hover {
-        color: #666;
-    }
-    .pagination li.active a, .pagination li.active a.page-link {
-        background: #03A9F4;
-    }
-    .pagination li.active a:hover {
-        background: #0397d6;
-    }
- .pagination li.disabled i {
-        color: #ccc;
-    }
-    .pagination li i {
-        font-size: 16px;
-        padding-top: 6px
-    }
-    .hint-text {
-        float: left;
-        margin-top: 10px;
-        font-size: 13px;
-    }
- /* Custom checkbox */
- .custom-checkbox {
-  position: relative;
- }
- .custom-checkbox input[type="checkbox"] {
-  opacity: 0;
-  position: absolute;
-  margin: 5px 0 0 3px;
-  z-index: 9;
- }
- .custom-checkbox label:before{
-  width: 18px;
-  height: 18px;
- }
- .custom-checkbox label:before {
-  content: '';
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: text-top;
-  background: white;
-  border: 1px solid #bbb;
-  border-radius: 1px;
-  box-sizing: border-box;
-  z-index: 2;
- }
- .custom-checkbox input[type="checkbox"]:checked + label:after {
-  content: '';
-  position: absolute;
-  left: 6px;
-  top: 3px;
-  width: 6px;
-  height: 11px;
-  border: solid #000;
-  border-width: 0 3px 3px 0;
-  transform: inherit;
-  z-index: 3;
-  transform: rotateZ(45deg);
- }
- .custom-checkbox input[type="checkbox"]:checked + label:before {
-  border-color: #03A9F4;
-  background: #03A9F4;
- }
- .custom-checkbox input[type="checkbox"]:checked + label:after {
-  border-color: #fff;
- }
- .custom-checkbox input[type="checkbox"]:disabled + label:before {
-  color: #b8b8b8;
-  cursor: auto;
-  box-shadow: none;
-  background: #ddd;
- }
- /* Modal styles */
- .modal .modal-dialog {
-  max-width: 400px;
- }
- .modal .modal-header, .modal .modal-body, .modal .modal-footer {
-  padding: 20px 30px;
- }
- .modal .modal-content {
-  border-radius: 1px;
- }
- .modal .modal-footer {
-  background: #ecf0f1;
-  border-radius: 0 0 1px 1px;
- }
-    .modal .modal-title {
-        display: inline-block;
-    }
- .modal .form-control {
-  border-radius: 1px;
-  box-shadow: none;
-  border-color: #dddddd;
- }
- .modal textarea.form-control {
-  resize: vertical;
- }
- .modal .btn {
-  border-radius: 1px;
-  min-width: 100px;
- }
- .modal form label {
-  font-weight: normal;
- }
-</style>
-<script type="text/javascript">
-$(document).ready(function()
-{
- // Activate tooltip
- $('[data-toggle="tooltip"]').tooltip();
-
- // Select/Deselect checkboxes
- var checkbox = $('table tbody input[type="checkbox"]');
- $("#selectAll").click(function()
- {
-  if(this.checked){
-   checkbox.each(function()
-   {
-    this.checked = true;
-   });
-  }
-  else
-  {
-   checkbox.each(function()
-   {
-    this.checked = false;
-   });
-  }
- });
- checkbox.click(function()
- {
-  if(!this.checked)
-  {
-   $("#selectAll").prop("checked", false);
-  }
- });
-});
-</script>
-</head>
-<body>
-    <div class="container" style="padding-left:40px;width:100%">
-        <div class="table-wrapper">
-            <div class="table-title">
-                <div class="row">
-                    <div class="col-sm-6">
-      <h2>Gestion des <b>Demandes</b></h2>
-     </div>
-     <div class="col-sm-6">
-
-      <a href="/AjtDemande" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Ajouter</span></a>
-      <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Supprimer</span></a>
-     </div>
+        <form action="${Consultation == null?'createConsultation':'editConsultation'}" method="POST" style="margin-top:100px">
+            <h4>Crée un Etudiant</h4>
+            <hr>
+            &nbsp;
+            <div class="name-field">
+                <div>
+                    <label>CIN</label>
+            		<input type="text" placeholder="CIN" name="dateC" style="border: 1px solid #0298cf;border-radius: 7px;">
+                </div>
+                <div>
+                    <label>Email</label>
+            		<input type="date" placeholder="Email" name="dateC" style="border: 1px solid #0298cf;border-radius: 7px;">
                 </div>
             </div>
-            <table class="table table-striped table-hover">
-                <thead>
-                    <tr>
-      <th>
-       <span class="custom-checkbox">
-        <input type="checkbox" id="selectAll">
-        <label for="selectAll"></label>
-       </span>
-      </th>
-                        <th>id</th>
-                        <th>Date</th>
-                        <th>Nom</th>
-                        <th>Prenom</th>
-                        <th>Type</th>
-                        <thth>Module</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-      <td>
-       <span class="custom-checkbox">
-        <input type="checkbox" id="checkbox1" name="options[]" value="1">
-        <label for="checkbox1"></label>
-       </span>
-      </td>
-                        <th>1</th>
-                        <td>27/02/2023</td>
-                        <td>elmahi</td>
-                        <td>said</td>
-                        <td>rattrappage</td>
-                        <td>Java Entreprise Edition</td>
+            &nbsp;
+            <div class="name-field">
+                <div>
+                    <label>Prenom</label>
+            		<input type="text" placeholder="Prenom" name="dateC" style="border: 1px solid #0298cf;border-radius: 7px;">
+                </div>
+                <div>
+                    <label>Nom</label>
+            		<input type="text" placeholder="Nom" name="dateC" style="border: 1px solid #0298cf;border-radius: 7px;">
+                </div>
+            </div>
+            &nbsp;
+            <div class="name-field">
+                <div>
+                <label for="cars" >Module</label>
+  				<select  id="cars" style="border: 1px solid #0298cf;border-radius: 7px;padding-top:10px;padding-bottom:12px">
+    			<option value="" >choisir</option>
+    			<option>Programmation JAVA</option>
+                <option> Design Pattern et Genie Logiciel</option>
+                <option>Programmation System et Reseaux</option>
+                <option></option>
+  				</select>
+                </div>
+                <div>
+                <label for="cars" >Type</label>
+  				<select name="medcin" id="cars" style="border: 1px solid #0298cf;border-radius: 7px;padding-top:10px;padding-bottom:12px">
+    			<option value="" >choisir votre le type de l'examen</option>
+    			<option>rattrappage</option>
+                <option>Examen</option>
+    			<option>Controle</option>
 
-                        <td>
-                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                        </td>
-                    </tr>
+  				</select>
+                </div>
+            </div>
+            &nbsp;
+            &nbsp;
+            <input type="submit" value="Creé"  style="margin-left:100px"></div>
+            </form>
+            <style>
+form{
+    margin-top:70px;
+	margin-left:100px;
+	/* margin-right:30px;  */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    width : 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2  );
+}
+h4{
+    text-align: center;
+    font-size: 20px;
+}
+hr{
+    margin: 10px 0;
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    width: 100%;
+}
+.name-field{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.name-field div{
+    display: flex;
+    flex-direction: column;
+}
+.name-field div{
+    width: 49%;
+}
+label{
+    margin-bottom: 6px;
+}
+input{
+    margin-bottom: 5px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+input:focus{
+    border: 1px solid #17a2b8;
+}
+input[type="submit"]{
+    margin-top: 15px;
+    background-color: #17a2b8;
+    color: #fff;
+    border: 1px solid #17a2b8;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    margin: 5px 0;
+    font-size: 14px;
+}
+p a{
+    text-decoration: 0;
+    color: #17a2b8;
+}
+            </style>
+        </form>&nbsp;
+			</div>
+  <style>
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 340px;
+  top: 320px;
+  padding: 12px 16px 12px 16px;
+}
 
-                </tbody>
-            </table>
-        </div>
+.close:hover {
+  background: white;
+    color: #5386E4;
+}
+
+/* Style the header */
+.heade {
+  background-color: #48CAE4;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+.heade:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+  </style>
     </div>
 </body>
 
