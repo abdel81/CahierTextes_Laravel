@@ -17,9 +17,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/AjtCalender', function () {
+    return view('AjtCalender');
+});
 
 Route::get('/about', function () {
     return view('about');
+});
+
+
+Route::get('/calender', function () {
+    return view('calender');
 });
 
 

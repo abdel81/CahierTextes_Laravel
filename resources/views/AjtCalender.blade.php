@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>    
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Admin Panel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
     <style >
         * {
     margin: 0;
@@ -287,18 +288,12 @@ td {
 }
     </style>
 </head>
-
 <body>
-    <div class="side-menu">
+<div class="side-menu">
         <div class="brand-name">
             <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
                 <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>TextBooks</h2>
-            </a> 
-            <a href="/Ajt.Calender" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-                <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>TextBooks</h2>
-            </a> 
-        
-        </div>
+            </a>        </div>
         <ul>
             <!--<li><img src="dashboard (2).png" alt="">&nbsp; <span>Dashboard</span> </li>-->
             <li><img src="img/utilisateur.png" alt="" class="T">&nbsp;<span>Comptes</span> </li>
@@ -309,8 +304,9 @@ td {
             <li><img src="img/settings (1).png" alt="">&nbsp;<span>Settings</span> </li>
         </ul>
     </div>
-    <div class="container">
-        <div class="header">
+<div class="container">
+    <br />
+    <div class="header" style="position:fixed">
             <div class="nav">
                 <div class="search">
                     <input type="text" placeholder="Search..">
@@ -320,81 +316,139 @@ td {
                     <img src="img/notifications.png" alt="">
                     <div class="img-case">
                         <img src="img/user.png" alt="">
-                    </div>
-                    <a href="{{url('logout')}}" class="btn">Logouts</a>
                 </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="cards">
-                <div class="card">
-                    <div class="box">
-                        <h1>2194</h1>
-                        <h3>Etudiants</h3>
-                    </div>
-                    <div class="icon-case">
-                        <img src="img/reading.png" alt="">
-                    </div>
+                    <a href="{{url('logout')}}" class="btn">Logout</a>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <h1>53</h1>
-                        <h3>Calendriers</h3>
-                    </div>
-                    <div class="icon-case">
-                        <img src="img/calendar.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <h1>76</h1>
-                        <h3>Comptes</h3>
-                    </div>
-                    <div class="icon-case">
-                        <img src="img/utilisateur.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="content-2">
-                <div class="recent-payments">
-                    <div class="title">
-                        <h2>les demandes</h2>
-                        <a href="#" class="btn">Voir</a>
-                    </div>
-                    <table>
-                        <tr>
-                            <th>Professeur</th>
-                            <th>Classe</th>
-                            <th>Option</th>
-                        </tr>
-                        <tr>
-                            <td>abdellatif</td>
-                            <td>Genie info 4</td>
-                            <td><a href="#" class="btn">Voir</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="new-students">
-                    <div class="title">
-                        <h2>Nouveaux comptes</h2>
-                        <a href="#" class="btn">Voir</a>
-                    </div>
-                    <table>
-                        <tr>
-                            <th>Profil</th>
-                            <th>Nom</th>
-                            <th>option</th>
-                        </tr>
-                        <tr>
-                            <td><img src="img/user.png" alt=""></td>
-                            <td>aya</td>
-                            <td>Admin</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+            </div>&nbsp;
+        </div>&nbsp;
+    <br />&nbsp;
 
-</html> 
+    <div id="calendar">
+
+    </div>
+
+</div>
+   
+<script>
+
+$(document).ready(function () {
+
+    $.ajaxSetup({
+        headers:{
+            'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+
+    var calendar = $('#calendar').fullCalendar({
+        editable:true,
+        header:{
+            left:'prev,next today',
+            center:'title',
+            right:'month,agendaWeek,agendaDay'
+        },
+        events:'/full-calender',
+        selectable:true,
+        selectHelper: true,
+        select:function(start, end, allDay)
+        {
+            var title = prompt('Event Title:');
+
+            if(title)
+            {
+                var start = $.fullCalendar.formatDate(start, 'Y-MM-DD HH:mm:ss');
+
+                var end = $.fullCalendar.formatDate(end, 'Y-MM-DD HH:mm:ss');
+
+                $.ajax({
+                    url:"/full-calender/action",
+                    type:"POST",
+                    data:{
+                        title: title,
+                        start: start,
+                        end: end,
+                        type: 'add'
+                    },
+                    success:function(data)
+                    {
+                        calendar.fullCalendar('refetchEvents');
+                        alert("Event Created Successfully");
+                    }
+                })
+            }
+        },
+        editable:true,
+        eventResize: function(event, delta)
+        {
+            var start = $.fullCalendar.formatDate(event.start, 'Y-MM-DD HH:mm:ss');
+            var end = $.fullCalendar.formatDate(event.end, 'Y-MM-DD HH:mm:ss');
+            var title = event.title;
+            var id = event.id;
+            $.ajax({
+                url:"/full-calender/action",
+                type:"POST",
+                data:{
+                    title: title,
+                    start: start,
+                    end: end,
+                    id: id,
+                    type: 'update'
+                },
+                success:function(response)
+                {
+                    calendar.fullCalendar('refetchEvents');
+                    alert("Event Updated Successfully");
+                }
+            })
+        },
+        eventDrop: function(event, delta)
+        {
+            var start = $.fullCalendar.formatDate(event.start, 'Y-MM-DD HH:mm:ss');
+            var end = $.fullCalendar.formatDate(event.end, 'Y-MM-DD HH:mm:ss');
+            var title = event.title;
+            var id = event.id;
+            $.ajax({
+                url:"/full-calender/action",
+                type:"POST",
+                data:{
+                    title: title,
+                    start: start,
+                    end: end,
+                    id: id,
+                    type: 'update'
+                },
+                success:function(response)
+                {
+                    calendar.fullCalendar('refetchEvents');
+                    alert("Event Updated Successfully");
+                }
+            })
+        },
+
+        eventClick:function(event)
+        {
+            if(confirm("Are you sure you want to remove it?"))
+            {
+                var id = event.id;
+                $.ajax({
+                    url:"/full-calender/action",
+                    type:"POST",
+                    data:{
+                        id:id,
+                        type:"delete"
+                    },
+                    success:function(response)
+                    {
+                        calendar.fullCalendar('refetchEvents');
+                        alert("Event Deleted Successfully");
+                    }
+                })
+            }
+        }
+    });
+
+});
+  
+</script>
+  
+</body>
+</html>
