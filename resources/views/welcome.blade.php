@@ -54,7 +54,7 @@
                 <a href="/" class="nav-item nav-link active">Accueil</a>
                 <a href="/about" class="nav-item nav-link">A Propos</a>
             </div>
-            <a href="/AjtDemande" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Se connecter<i class="fa fa-arrow-right ms-3"></i></a>
+
         </div>
     </nav>
     <!-- Navbar End -->
