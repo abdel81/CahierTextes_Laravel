@@ -17,10 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/AjtCalender', function () {
-    return view('AjtCalender');
-});
-
 });
 
 Route::get('/about', function () {
