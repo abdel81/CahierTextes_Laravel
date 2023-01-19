@@ -357,7 +357,7 @@ td {
             <div class="content-2">
                 <div class="recent-payments">
                     <div class="title">
-                        <h2>les demandes</h2>
+                        <h2>les demandess</h2>
                         <a href="#" class="btn">Voir</a>
                     </div>
                     <table>
