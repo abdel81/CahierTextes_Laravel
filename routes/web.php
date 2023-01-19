@@ -17,13 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/demande', function () {
-    return view('demande');
-});
 
-//patie abdel
-Route::get('/AjtDemande', function () {
-    return view('AjtDemande');
 });
 
 Route::get('/about', function () {

@@ -14,10 +14,18 @@ class CreateCalendrierTable extends Migration
     public function up()
     {
         Schema::create('calendrier', function (Blueprint $table) {
-            $table->id();
+            $table->BigIncrements('id');
             $table->string('Date');
-            //$table->foreign('classid')->references('id')->on('classe');
-            //$table->foreign('module')->references('nommodule')->on('module');
+            $table->foreign('classid')
+            //->references('id')->on('classe')
+                ->constrained('classe')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
+            $table->unsignedBigInteger('classid');
+            $table->foreignId('module') // ->references('nommodule')
+            ->constrained('module')->onUpdate('cascade')->onDelete('cascade');
+            $table->string('module');
+
 
 
             $table->timestamps();
