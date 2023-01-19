@@ -17,6 +17,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/compte', function () {
+    return view('compte');
+});
+
+Route::get('/etudiant', function () {
+    return view('etudiant');
+});
+
+Route::get('/AjtCompte', function () {
+    return view('AjtCompte');
+});
 
 Route::get('/about', function () {
     return view('about');
