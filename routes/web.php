@@ -16,11 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-;
+
 });
 
 Route::get('/about', function () {
     return view('about');
+});
+
+
+Route::get('/calender', function () {
+    return view('calender');
 });
 
 
@@ -31,13 +36,13 @@ Route::get('logout','App\Http\Controllers\AuthController@logout')->name('logout'
 Route::group(['middleware' => ['auth']], function(){
     Route::group(['middleware' => ['Crt_login:admin']],function(){
         Route::get('admin','App\Http\Controllers\AdminController@index')->name('admin');
-    }); 
+    });
 
     Route::group(['middleware' => ['Crt_login:prof']],function(){
         Route::get('prof','App\Http\Controllers\ProfController@index')->name('prof');
-    }); 
+    });
 
     Route::group(['middleware' => ['Crt_login:superviseur']],function(){
         Route::get('super','App\Http\Controllers\SuperController@index')->name('super');
-    }); 
+    });
 });
