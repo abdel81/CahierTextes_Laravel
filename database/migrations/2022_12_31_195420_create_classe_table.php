@@ -14,7 +14,7 @@ class CreateClasseTable extends Migration
     public function up()
     {
         Schema::create('classe', function (Blueprint $table) {
-            $table->id();
+            $table->BigIncrements('id')->onUpdate('cascade')->onDelete('cascade');
             $table->string('niveau');
 
             $table->timestamps();

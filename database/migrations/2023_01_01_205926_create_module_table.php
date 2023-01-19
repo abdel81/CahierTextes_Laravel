@@ -14,9 +14,11 @@ class CreateModuleTable extends Migration
     public function up()
     {
         Schema::create('module', function (Blueprint $table) {
-            $table->id();
+            $table->BigIncrements('id');
             $table->string('nommod');
             $table->string('semestremod');
+            $table->foreign('nomprof')->references('NomP')->on('professeur')->onUpdate('cascade')->onDelete('cascade');
+            $table->string('professeur');
             $table->timestamps();
         });
     }

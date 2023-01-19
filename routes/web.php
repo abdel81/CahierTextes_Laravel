@@ -17,16 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/compte', function () {
-    return view('compte');
-});
-
-Route::get('/etudiant', function () {
-    return view('etudiant');
-});
-
-Route::get('/AjtCompte', function () {
-    return view('AjtCompte');
 });
 
 Route::get('/about', function () {
@@ -45,6 +35,11 @@ Route::get('/etudiant', function () {
     return view('etudiant');
 });
 
+Route::get('/calender', function () {
+    return view('calender');
+});
+
+
 Route::get('login','App\Http\Controllers\AuthController@index')->name('login');
 Route::post('proses_login','App\Http\Controllers\AuthController@proses_login')->name('proses_login');
 Route::get('logout','App\Http\Controllers\AuthController@logout')->name('logout');
@@ -52,13 +47,13 @@ Route::get('logout','App\Http\Controllers\AuthController@logout')->name('logout'
 Route::group(['middleware' => ['auth']], function(){
     Route::group(['middleware' => ['Crt_login:admin']],function(){
         Route::get('admin','App\Http\Controllers\AdminController@index')->name('admin');
-    }); 
+    });
 
     Route::group(['middleware' => ['Crt_login:prof']],function(){
         Route::get('prof','App\Http\Controllers\ProfController@index')->name('prof');
-    }); 
+    });
 
     Route::group(['middleware' => ['Crt_login:superviseur']],function(){
         Route::get('super','App\Http\Controllers\SuperController@index')->name('super');
-    }); 
+    });
 });

@@ -14,9 +14,11 @@ class CreateDemandeTable extends Migration
     public function up()
     {
         Schema::create('demande', function (Blueprint $table) {
-            $table->id();
+            $table->BigIncrements('id');
             $table->string('datetest');
             $table->string('typetest');
+            $table->foreign('moduletest')->references('nommodule')->on('module')->onUpdate('cascade')->onDelete('cascade');
+            $table->string('module');
             $table->timestamps();
         });
     }
