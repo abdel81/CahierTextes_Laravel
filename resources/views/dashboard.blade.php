@@ -292,23 +292,11 @@ td {
     <div class="side-menu">
         <div class="brand-name">
             <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-                <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>TextBooks</h2>
-            </a> 
-            <a href="/Ajt.Calender" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-                <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>TextBooks</h2>
-            </a> 
-        
-        </div>
+
         <ul>
             <!--<li><img src="dashboard (2).png" alt="">&nbsp; <span>Dashboard</span> </li>-->
-            <a href="/compte" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <li><img src="img/utilisateur.png" alt="" class="T">&nbsp;<span>Comptes</span> </li>
-            </a>
 
-            <li><img src="img/calendar.png" alt="">&nbsp;<span>Calendriers</span> </li>
-            
-            <li><img src="img/reading.png" alt="">&nbsp;<span>Etudiants</span> </li>
-            <li><img src="img/reading.png" alt="">&nbsp;<span>Demande</span> </li>
+
             <!--<li><img src="payment.png" alt="">&nbsp;<span>Income</span> </li>-->
             <li><img src="img/question.png" alt="">&nbsp; <span>Help</span></li>
             <li><img src="img/settings (1).png" alt="">&nbsp;<span>Settings</span> </li>
@@ -335,7 +323,7 @@ td {
                 <div class="card">
                     <div class="box">
                         <h1>2194</h1>
-                        <h3>Etudiants</h3>
+                        <h3>Etudiantss</h3>
                     </div>
                     <div class="icon-case">
                         <img src="img/reading.png" alt="">

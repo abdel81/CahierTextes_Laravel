@@ -302,6 +302,9 @@ td {
             </a>        </div>
         <ul>
             <!--<li><img src="dashboard (2).png" alt="">&nbsp; <span>Dashboard</span> </li>-->
+            <li><img src="img/utilisateur.png" alt="" class="T">&nbsp;<span><a href="compte" class="navbar-brand d-flex align-items-center px-4 px-lg-5">Comptes</a></span> </li>
+            <li><img src="img/calendar.png" alt="">&nbsp;<span>Calendriers</span> </li>
+            <li><img src="img/reading.png" alt="">&nbsp;<span><a href="etudiant" class="navbar-brand d-flex align-items-center px-4 px-lg-5" style="font-size:28px;color:white">Etudiant</a></span> </li>
             <!--<li><img src="payment.png" alt="">&nbsp;<span>Income</span> </li>-->
             <li><img src="img/question.png" alt="">&nbsp; <span>Help</span></li>
             <li><img src="img/settings (1).png" alt="">&nbsp;<span>Settings</span> </li>
@@ -588,10 +591,9 @@ $(document).ready(function()
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-      <h2>Gestion des <b>Comptes</b></h2>
+      <h2>Gestion des <b>Etudiants</b></h2>
      </div>
      <div class="col-sm-6">
-     <a href="{{url('logout')}}" class="btn">Logout</a>
 
       <a href="/AjtCompte" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Ajouter</span></a>
       <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Supprimer</span></a>      
@@ -611,8 +613,9 @@ $(document).ready(function()
                         <th>Name</th>
                         <th>Prenom</th>
                         <th>Email</th>
-                        <th>Numero</th>
-                        <th>Pass</th>
+                        <th>filiere</th>
+                        <th>classe</th>
+                        
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -624,12 +627,13 @@ $(document).ready(function()
         <label for="checkbox1"></label>
        </span>
       </td>
-                        <td>FB123131</td>
-                        <td>Hamza</td>
-                        <td>Sissani</td>
-                        <td>Hamzasissani@gmail.com</td>
-                        <td>0625359962</td>
-                        <td>Pass</td>
+                        <td>CD123</td>
+                        <td>Oumayma</td>
+                        <td>Gaddar</td>
+                        <td>OumaymaGaddar@gmail.com</td>
+                        <td>Genie info</td>
+                        <td>4eme annee</td>
+                       
                         <td>
                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                             <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>

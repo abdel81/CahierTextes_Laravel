@@ -23,6 +23,17 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/compte', function () {
+    return view('compte');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/etudiant', function () {
+    return view('etudiant');
+});
 
 Route::get('/calender', function () {
     return view('calender');
